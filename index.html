@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creative Student Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+        background:url("https://media.istockphoto.com/id/1435226158/photo/circuit-board-background-computer-data-technology-artificial-intelligence.jpg?b=1&s=170667a&w=0&k=20&c=d-gHg6uCV5JEaKJCpxhJ01Ab19m032daRC8vDo8NzDI=");
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+    }
+
+    .project {
+      width: 300px;
+      background-color: #fff;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+   
+
+    .project p {
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      margin-top: 40px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    #education {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Split into two columns */
+      grid-gap: 20px; /* Gap between grid items */
+    }
+    
+    .h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    li h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    
+    li p {
+      margin: 0;
+    }
+    .education {
+      width: 300px;
+      background-color: #fff;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Portfolio</h1>
+  </header>
+
+  <main>
+    <nav>
+        <ul>
+            <p><li><a href="#about">About</a></li></p>
+            <p><li><a href="#projects">Projects</a></li></p>
+            <p><li><a href="#contact">Contact</a></li></p>
+        </ul>
+    </nav>
+    <section id="about">
+    <h2>About Me</h2>
+    <style>
+        .photo-with-text {
+          display: flex;
+          align-items: center;
+        }
+    
+        .photo-with-text img {
+          margin-right: 10px;
+        }
+      
+         img {
+      width: 310px; 
+      height: auto;
+    }
+
+      </style>
+
+    <img src="sruthi.jpg" alt="Your Image" class="resized-image">
+<h2><b>CAREER OBJECTIVE:</b></h2>
+      <p>An aspiring undergraduate student who aims to become 
+        a successful computer science engineer. I consider
+         myself as a responsible and a orderly person. Looking 
+         forward to face many exciting challenges that would sculpt me up.
+         Self-motivated, self-esteemed, highly passionate and
+         hardworking fresher looking for an opportunity to
+         work in a challenging organization to utilize my
+         skills and knowledge to work for the growth of the
+         organization.  </p>
+         <P></P>
+
+         <h2>DOWNLOAD MY CV</h2>
+    <a href="cv sruthi.pdf">RESUME</a>
+
+    <h2>Education</h2>
+  
+
+    <!-- Education Timeline -->
+    <div class ="timeline">
+      <ul>
+        <li>
+          <p>University Name:BIT</p>
+          <p>B Tech Computer technology.</p>
+          <p>Year of Graduation:2025</p>
+          
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <div class="activities">
+      <h2>Extracurricular Activities</h2>
+      
+      
+      <ul>
+        <li></li>
+        <div class="image-container">
+            <img src="IMG_20230521_121334.jpg" alt="Attended conference at SNS institute of technology" onclick="handleClick(1)">
+            <img src="IMG_20230521_124710.jpg" alt="VISAI 2023" onclick="handleClick(2)">
+            <img src="IMG_20230521_124808.jpg" alt="Hands on training" onclick="handleClick(3)">
+          </div>
+    </div>
+  </section>
+    <section id="projects"></section>
+    <h2>PROJECTS</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>EMO PLAYER</h3>
+        <p>An Emotional based music player that detects the users facial emotions using web camera and plays music according to the users emotion.Tools used: - i) Machine learning algorithms ii) Kaggle dataset</p>
+    <img src="EMO IMG1.png" alt="Your Image" class="resized-image">
+    <a href="EMO PLAYER CT.pdf">CLICK HERE</a>
+
+
+      </div>
+      <div class="project">
+        <h3>WATER QUALITY PREDICTION USING ML ALGORITHMS.</h3>
+        <p>Prediction of water quality using machine learning algorithms and found that the water is portable or not portable for human consumption.
+          Tools used: - i) Machine learning algorithms ii) Kaggle dataset
+          </p>
+          <img id="photo" src="WATER1.png" alt="Your Image" class="resized-image">
+          
+
+      </div>
+    </div>
+    <section id="contact"></section>
+    
+    <h2>Contact Details</h2>
+  <hr>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required><br><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter address" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  <h2 class="contact">Contact me</h2>
+    <p>Name:Sruthi K</p>
+    <p>Email: sruthi.ct21@bitsathy.ac.in</p>
+    <p>Phone: 123-456-7890</p>
+  </main>
+
+  <footer>
+    &copy; 2023 Student Portfolio | All rights reserved
+  </footer>
+</body>
+</html>
